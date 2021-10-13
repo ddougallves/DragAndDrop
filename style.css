@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+.neutralArea {
+    width: 100%;
+    max-width: 500px;
+    min-height: 172px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+    margin: 10px auto;
+    padding: 20px 0px;
+    background-color: rgb(235, 235, 235);;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 10px;
+}
+.item {
+    justify-self: center;
+    width: 130px;
+    height: 130px;
+    background-color: #17a2b8;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+}
+.item.dragging {
+    opacity: 0.5;
+}
+.areas {
+    width: 100%;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+    margin: 10px 0px;
+}
+.areas.correct .area .item{
+    background-color: #28a745;
+}
+
+.areas.correct .area{
+    background-color: #28a745;
+    border: 0;
+}
+
+.areas.incorrect .area .item{
+    background-color: #dc3545;
+}
+
+.areas.incorrect .area{
+    background-color: #dc3545;
+    border: 0;
+}
+
+.area {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area.hover {
+    background-color: rgb(170, 170, 170);
+}
+footer {
+    margin-top: 20px;
+    color: #333;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 530px){
+    .neutralArea {
+        width: 100%;
+        max-width: 90%;
+        margin: 10px 0px;
+        gap: 10px;
+    }
+    .item {
+        width: 68px;
+        height: 68px;
+    }
+    .item.dragging {
+        opacity: 0.5;
+    }
+    .areas {
+        width: 100%;
+        max-width: 90%;
+    }
+    .area {
+        width: 89px;
+        height: 89px;
+        gap: 10px;
+    }
+}
