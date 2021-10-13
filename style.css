@@ -22,10 +22,11 @@ h1 {
 .neutralArea {
     width: 100%;
     max-width: 500px;
+    min-height: 172px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 12px;
-    margin: 42px auto;
+    margin: 10px auto;
     padding: 20px 0px;
     background-color: rgb(235, 235, 235);;
     border: 1px solid rgb(235, 235, 235);
@@ -53,7 +54,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 12px;
-    margin: 42px 0px;
+    margin: 10px 0px;
 }
 .areas.correct .area .item{
     background-color: #28a745;
@@ -64,10 +65,19 @@ h1 {
     border: 0;
 }
 
+.areas.incorrect .area .item{
+    background-color: #dc3545;
+}
+
+.areas.incorrect .area{
+    background-color: #dc3545;
+    border: 0;
+}
+
 .area {
     width: 150px;
     height: 150px;
-    border: 2px solid rgb(235, 235, 235);
+    background-color: rgb(235, 235, 235);
     border-radius: 10px;
     justify-self: center;
     display: flex;
@@ -75,7 +85,7 @@ h1 {
     align-items: center;
 }
 .hover {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(170, 170, 170);
 }
 footer {
     margin-top: 20px;
