@@ -1,6 +1,6 @@
 # Drag and drop 
 
-This game is a drag and drop exercise to show one quick and simple way to use drag and drop events on javascript. To try out this game before downloading this project [click here]().
+This game is a drag and drop exercise to show one quick and simple way to use drag and drop events on javascript. To try out this game before downloading this project [click here](https://gitdragdrop.000webhostapp.com/).
 
 # How to play
 
